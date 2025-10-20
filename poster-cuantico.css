@@ -1,0 +1,131 @@
+/* --- CONFIGURACIÓN GENERAL --- */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: radial-gradient(circle at top, #0a0a1f, #000);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* --- CONTENEDOR PRINCIPAL --- */
+.poster-container {
+  background: rgba(20, 20, 40, 0.9);
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(138, 43, 226, 0.4);
+  max-width: 550px;
+  width: 100%;
+  padding: 40px 30px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.poster-container:hover {
+  transform: scale(1.01);
+}
+
+/* --- ICONO SUPERIOR --- */
+.logo-circle {
+  background: linear-gradient(135deg, #00c6ff, #8a2be2);
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-size: 40px;
+  color: white;
+  box-shadow: 0 0 20px rgba(0, 198, 255, 0.5);
+}
+
+/* --- TÍTULO --- */
+.poster-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #00c6ff, #8a2be2);
+  background-clip: text;
+  -webkit-background-clip: text; /* Compatibilidad WebKit */
+  color: transparent;
+  -webkit-text-fill-color: transparent; /* Chrome/Safari */
+  margin-bottom: 15px;
+}
+
+/* --- SUBTÍTULO --- */
+.poster-subtitle {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ccc;
+  margin-bottom: 25px;
+}
+
+/* --- BOTONES DE ENLACES --- */
+.poster-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.poster-button {
+  display: inline-block;
+  background: linear-gradient(90deg, #00c6ff, #8a2be2);
+  color: white;
+  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px rgba(138, 43, 226, 0.5);
+  width: 100%;
+  max-width: 320px;
+  text-align: center;
+}
+
+.poster-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 198, 255, 0.6);
+}
+
+/* --- PIE DE PÁGINA --- */
+.poster-footer {
+  font-size: 0.85rem;
+  color: #aaa;
+  margin-top: 30px;
+}
+
+/* --- EFECTO DE BRILLO (opcional si lo usas) --- */
+.glow-orb {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0,198,255,0.4), rgba(0,0,0,0));
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+/* --- RESPONSIVE DESIGN --- */
+@media (max-width: 600px) {
+  .poster-container {
+    padding: 30px 20px;
+  }
+
+  .poster-title {
+    font-size: 1.5rem;
+  }
+
+  .poster-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .poster-button {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+}
